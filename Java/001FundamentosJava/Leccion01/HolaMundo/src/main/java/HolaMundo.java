@@ -9,9 +9,23 @@
  * @author xavier
  */
 public class HolaMundo {
-    
-    public static void main(String lalo[]){
-        
+
+    public static void main(String lalo[]) {
+
         System.out.println("Hola Mundo");
+
+        String saludar = "Saludos";
+
+        System.out.println(saludar);
+        System.out.println(saludar);
+        System.out.println(saludar);
+
+        //var infiere el tipo de dato 
+        var despedirse = "Hasta luego";
+        System.out.println(despedirse);
+        
+        var numero = 1;
+        System.out.println(numero);
+
     }
 }
