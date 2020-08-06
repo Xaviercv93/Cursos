@@ -17,10 +17,42 @@
         <!-- <h1>{{mensaje}}</h1> -->
 
         <!-- con uso de directiva v-text -->
-        <h1 v-text="mensaje"></h1>
+        <!-- <h1 v-text="mensaje"></h1> -->
 
         <!-- para agregar un input -->
-        <input type="text" v-model="mensaje">
+        <!-- <input type="text" v-model="mensaje"> -->
+        <!-- ------------------------------------------- -->
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-xs-12">
+                    <h1>Agregar Nota</h1>
+
+                </div>
+                <div class="col-md-6 col-xs-12">
+                    <h1>Lista de Notas </h1>
+                    <table class="table">
+                        <tr>
+                            <th>Nombre</th>
+                            <th>Promedio</th>
+                        </tr>
+                        <!-- v-for permite trabajar con los datos de una api -->
+                        <!-- v-bind permite usar un estilo css -->
+                        <tr v-for="item in lista" v-bind:style="item.estado==false?'color:red':''">
+                            <td v-text="item.nombre"></td>
+                            <td v-text="item.promedio"></td>
+                        </tr>
+                    </table>
+
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 col-xs-12">
+                    <p class="text-center">
+                        xaviercv93
+                    </p>
+                </div>
+            </div>
+        </div>
     </div>
 
 </body>
