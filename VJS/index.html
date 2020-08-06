@@ -36,7 +36,11 @@
 
                 </div>
                 <div class="col-md-6 col-xs-12">
-                    <h1>Lista de Notas </h1>
+
+                    <!-- v-if  v-else para crear condiciones -->
+                    <h1 v-if="lista.length > 0">Lista de Notas </h1>
+                    <h1 v-else="lista">No existen notas </h1>
+
                     <table class="table">
                         <tr>
                             <th>Nombre</th>
