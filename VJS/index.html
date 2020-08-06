@@ -12,8 +12,15 @@
 
 <body>
     <div id="app">
-        <h1>{{mensaje}}</h1>
+        <!-- sin uso de directiva v-text -->
 
+        <!-- <h1>{{mensaje}}</h1> -->
+
+        <!-- con uso de directiva v-text -->
+        <h1 v-text="mensaje"></h1>
+
+        <!-- para agregar un input -->
+        <input type="text" v-model="mensaje">
     </div>
 
 </body>
